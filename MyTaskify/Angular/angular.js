@@ -27,6 +27,7 @@ app.controller('controller', function($scope) {
     $scope.taskName;
 
     $scope.toggleReminder = function(element) {
+        
         let currTask = element.currentTarget;
         let taskID = parseInt(currTask.id);
         // console.log(currTask.classList);
@@ -40,6 +41,7 @@ app.controller('controller', function($scope) {
     $scope.updateTasks = function() {
         // let taskName1 = ;
         // console.log($scope.taskName);
+        
         if (!$scope.taskName) {
             alert('Task cannot be empty');
         } else {
